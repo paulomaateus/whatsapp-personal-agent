@@ -1,0 +1,104 @@
+{
+  "id": "evt_01m3ygxye74z3remgcjwyhymh3",
+  "timestamp": 1790952012231,
+  "event": "message.any",
+  "session": "default",
+  "me": {
+    "id": "5511900000001@c.us",
+    "pushName": "Usuário",
+    "lid": "100000000000001@lid",
+    "jid": "5511900000001:22@s.whatsapp.net",
+    "reachoutTimelock": null,
+    "messageCapping": {
+      "cappingStatus": "NONE",
+      "totalQuota": -1,
+      "usedQuota": 0,
+      "cycleStart": 1790823600,
+      "cycleEnd": 1793501999,
+      "mvStatus": "NOT_ELIGIBLE",
+      "oteStatus": "NOT_ELIGIBLE"
+    }
+  },
+  "payload": {
+    "id": "false_5511900000005-100000000000006@g.us_2A9FBF2E905B01C4E5FC_100000000000007@lid",
+    "timestamp": 1790952011,
+    "from": "5511900000005-100000000000006@g.us",
+    "fromMe": false,
+    "source": "app",
+    "body": "texto de exemplo 2",
+    "to": "100000000000007@lid",
+    "participant": "100000000000007@lid",
+    "hasMedia": false,
+    "media": null,
+    "ack": 2,
+    "location": null,
+    "vCards": null,
+    "ackName": "DEVICE",
+    "replyTo": null,
+    "_data": {
+      "Info": {
+        "Chat": "5511900000005-100000000000006@g.us",
+        "Sender": "100000000000007@lid",
+        "IsFromMe": false,
+        "IsGroup": true,
+        "AddressingMode": "lid",
+        "SenderAlt": "5511900000008@s.whatsapp.net",
+        "RecipientAlt": "",
+        "BroadcastListOwner": "",
+        "BroadcastRecipients": null,
+        "ID": "2A9FBF2E905B01C4E5FC",
+        "ServerID": 0,
+        "Type": "text",
+        "PushName": "Contato 3",
+        "Timestamp": "2026-10-02T14:40:11Z",
+        "Category": "",
+        "Multicast": false,
+        "MediaType": "",
+        "Edit": "",
+        "MsgBotInfo": {
+          "EditType": "",
+          "EditTargetID": "",
+          "EditSenderTimestampMS": "0001-01-01T00:00:00Z",
+          "ClientThreadID": ""
+        },
+        "MsgMetaInfo": {
+          "TargetID": "",
+          "TargetSender": "",
+          "TargetChat": "",
+          "DeprecatedLIDSession": null,
+          "ThreadMessageID": "",
+          "ThreadMessageSenderJID": ""
+        },
+        "IsNewsletterStatus": false,
+        "VerifiedName": null,
+        "DeviceSentMeta": null
+      },
+      "Message": {
+        "conversation": "texto de exemplo 2",
+        "messageContextInfo": {
+          "messageSecret": "<redacted>"
+        }
+      },
+      "IsEphemeral": false,
+      "IsViewOnce": false,
+      "IsViewOnceV2": false,
+      "IsViewOnceV2Extension": false,
+      "IsDocumentWithCaption": false,
+      "IsLottieSticker": false,
+      "IsBotInvoke": false,
+      "IsEdit": false,
+      "SourceWebMsg": null,
+      "UnavailableRequestID": "",
+      "RetryCount": 0,
+      "NewsletterMeta": null,
+      "RawMessage": {
+        "conversation": "texto de exemplo 2",
+        "messageContextInfo": {
+          "messageSecret": "<redacted>"
+        }
+      },
+      "Status": 3
+    }
+  },
+  "engine": "GOWS"
+}

@@ -1,0 +1,154 @@
+{
+  "id": "evt_01m3ygyj4nwrpf3whgmpckp0wh",
+  "timestamp": 1790952032405,
+  "event": "message.edited",
+  "session": "default",
+  "me": {
+    "id": "5511900000001@c.us",
+    "pushName": "Usuário",
+    "lid": "100000000000001@lid",
+    "jid": "5511900000001:22@s.whatsapp.net",
+    "reachoutTimelock": null,
+    "messageCapping": {
+      "cappingStatus": "NONE",
+      "totalQuota": -1,
+      "usedQuota": 0,
+      "cycleStart": 1790823600,
+      "cycleEnd": 1793501999,
+      "mvStatus": "NOT_ELIGIBLE",
+      "oteStatus": "NOT_ELIGIBLE"
+    }
+  },
+  "payload": {
+    "id": "true_100000000000001@lid_AC3649F2169404B6C2AC96810F780132",
+    "timestamp": 1790952032,
+    "from": "100000000000001@lid",
+    "fromMe": true,
+    "source": "app",
+    "body": "texto de exemplo 4",
+    "to": null,
+    "participant": null,
+    "hasMedia": false,
+    "media": null,
+    "ack": 1,
+    "location": null,
+    "vCards": null,
+    "ackName": "SERVER",
+    "replyTo": null,
+    "_data": {
+      "Info": {
+        "Chat": "100000000000001@lid",
+        "Sender": "100000000000001@lid",
+        "IsFromMe": true,
+        "IsGroup": false,
+        "AddressingMode": "",
+        "SenderAlt": "",
+        "RecipientAlt": "5511900000001@s.whatsapp.net",
+        "BroadcastListOwner": "",
+        "BroadcastRecipients": null,
+        "ID": "AC3649F2169404B6C2AC96810F780132",
+        "ServerID": 0,
+        "Type": "text",
+        "PushName": "Usuário",
+        "Timestamp": "2026-10-02T14:40:32Z",
+        "Category": "",
+        "Multicast": false,
+        "MediaType": "",
+        "Edit": "1",
+        "MsgBotInfo": {
+          "EditType": "",
+          "EditTargetID": "",
+          "EditSenderTimestampMS": "0001-01-01T00:00:00Z",
+          "ClientThreadID": ""
+        },
+        "MsgMetaInfo": {
+          "TargetID": "",
+          "TargetSender": "",
+          "TargetChat": "",
+          "DeprecatedLIDSession": null,
+          "ThreadMessageID": "",
+          "ThreadMessageSenderJID": ""
+        },
+        "IsNewsletterStatus": false,
+        "VerifiedName": null,
+        "DeviceSentMeta": {
+          "DestinationJID": "100000000000001@lid",
+          "Phash": ""
+        }
+      },
+      "Message": {
+        "protocolMessage": {
+          "key": {
+            "remoteJID": "100000000000001@lid",
+            "fromMe": true,
+            "ID": "AC25D399B3947D04CF1A0A687E3E9FBC"
+          },
+          "type": 14,
+          "editedMessage": {
+            "protocolMessage": {
+              "key": {
+                "remoteJID": "100000000000001@lid",
+                "fromMe": true,
+                "ID": "AC25D399B3947D04CF1A0A687E3E9FBC"
+              },
+              "type": 14,
+              "editedMessage": {
+                "conversation": "texto de exemplo 4"
+              },
+              "timestampMS": 1790952032142
+            },
+            "messageContextInfo": {
+              "messageSecret": "<redacted>"
+            }
+          }
+        }
+      },
+      "IsEphemeral": false,
+      "IsViewOnce": false,
+      "IsViewOnceV2": false,
+      "IsViewOnceV2Extension": false,
+      "IsDocumentWithCaption": false,
+      "IsLottieSticker": false,
+      "IsBotInvoke": false,
+      "IsEdit": false,
+      "SourceWebMsg": null,
+      "UnavailableRequestID": "",
+      "RetryCount": 0,
+      "NewsletterMeta": null,
+      "RawMessage": {
+        "deviceSentMessage": {
+          "destinationJID": "100000000000001@lid",
+          "message": {
+            "messageContextInfo": {
+              "deviceListMetadata": {
+                "senderKeyHash": "<redacted>",
+                "senderTimestamp": 1790951808
+              },
+              "deviceListMetadataVersion": 2
+            },
+            "secretEncryptedMessage": {
+              "targetMessageKey": {
+                "remoteJID": "100000000000001@lid",
+                "fromMe": true,
+                "ID": "AC25D399B3947D04CF1A0A687E3E9FBC"
+              },
+              "encPayload": "<redacted>",
+              "encIV": "<redacted>",
+              "secretEncType": 2
+            }
+          }
+        },
+        "messageContextInfo": {
+          "deviceListMetadata": {
+            "senderKeyHash": "<redacted>",
+            "senderTimestamp": 1790951808
+          },
+          "deviceListMetadataVersion": 2
+        }
+      },
+      "Status": 2
+    },
+    "editedMessageId": "AC25D399B3947D04CF1A0A687E3E9FBC"
+  },
+  "engine": "GOWS"
+}

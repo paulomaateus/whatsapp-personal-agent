@@ -1,0 +1,39 @@
+{
+  "id": "evt_01m3ygz8jvhpqrtpsa74wwbhw9",
+  "timestamp": 1790952055387,
+  "event": "engine.event",
+  "session": "default",
+  "me": {
+    "id": "5511900000001@c.us",
+    "pushName": "Usuário",
+    "lid": "100000000000001@lid",
+    "jid": "5511900000001:22@s.whatsapp.net",
+    "reachoutTimelock": null,
+    "messageCapping": {
+      "cappingStatus": "NONE",
+      "totalQuota": -1,
+      "usedQuota": 0,
+      "cycleStart": 1790823600,
+      "cycleEnd": 1793501999,
+      "mvStatus": "NOT_ELIGIBLE",
+      "oteStatus": "NOT_ELIGIBLE"
+    }
+  },
+  "payload": {
+    "session": "default",
+    "event": "events.DeleteForMe",
+    "data": {
+      "ChatJID": "100000000000001@lid",
+      "SenderJID": "",
+      "IsFromMe": true,
+      "MessageID": "AC5381DDAA08399FBE163F7E3688190C",
+      "Timestamp": "2026-10-02T14:40:54.671Z",
+      "Action": {
+        "deleteMedia": false,
+        "messageTimestamp": 1790952023
+      },
+      "FromFullSync": false
+    }
+  },
+  "engine": "GOWS"
+}

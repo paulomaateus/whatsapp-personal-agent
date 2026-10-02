@@ -1,0 +1,168 @@
+{
+  "id": "evt_01m3yh2a3r3m23055xtnjkhgd8",
+  "timestamp": 1790952155256,
+  "event": "message",
+  "session": "default",
+  "me": {
+    "id": "5511900000001@c.us",
+    "pushName": "Usuário",
+    "lid": "100000000000001@lid",
+    "jid": "5511900000001:22@s.whatsapp.net",
+    "reachoutTimelock": null,
+    "messageCapping": {
+      "cappingStatus": "NONE",
+      "totalQuota": -1,
+      "usedQuota": 0,
+      "cycleStart": 1790823600,
+      "cycleEnd": 1793501999,
+      "mvStatus": "NOT_ELIGIBLE",
+      "oteStatus": "NOT_ELIGIBLE"
+    }
+  },
+  "payload": {
+    "id": "false_status@broadcast_3A73D836E6204283911C63BC56022DBF_100000000000009@lid",
+    "timestamp": 1790952154,
+    "from": "status@broadcast",
+    "fromMe": false,
+    "source": "app",
+    "to": "100000000000009@lid",
+    "participant": "100000000000009@lid",
+    "hasMedia": true,
+    "media": {
+      "url": "http://localhost:3000/api/files/default/3A73D836E6204283911C63BC56022DBF.jpeg",
+      "mimetype": "image/jpeg"
+    },
+    "ack": 2,
+    "location": null,
+    "vCards": null,
+    "ackName": "DEVICE",
+    "replyTo": null,
+    "_data": {
+      "Info": {
+        "Chat": "status@broadcast",
+        "Sender": "100000000000009@lid",
+        "IsFromMe": false,
+        "IsGroup": true,
+        "AddressingMode": "",
+        "SenderAlt": "5511900000010@s.whatsapp.net",
+        "RecipientAlt": "",
+        "BroadcastListOwner": "",
+        "BroadcastRecipients": null,
+        "ID": "3A73D836E6204283911C63BC56022DBF",
+        "ServerID": 0,
+        "Type": "media",
+        "PushName": "Contato 4",
+        "Timestamp": "2026-10-02T14:42:34Z",
+        "Category": "",
+        "Multicast": false,
+        "MediaType": "image",
+        "Edit": "",
+        "MsgBotInfo": {
+          "EditType": "",
+          "EditTargetID": "",
+          "EditSenderTimestampMS": "0001-01-01T00:00:00Z",
+          "ClientThreadID": ""
+        },
+        "MsgMetaInfo": {
+          "TargetID": "",
+          "TargetSender": "",
+          "TargetChat": "",
+          "DeprecatedLIDSession": null,
+          "ThreadMessageID": "",
+          "ThreadMessageSenderJID": ""
+        },
+        "IsNewsletterStatus": false,
+        "VerifiedName": null,
+        "DeviceSentMeta": null
+      },
+      "Message": {
+        "imageMessage": {
+          "URL": "https://mmg.whatsapp.net/<redacted>",
+          "mimetype": "image/jpeg",
+          "caption": "",
+          "fileSHA256": "<redacted>",
+          "fileLength": 64859,
+          "height": 965,
+          "width": 968,
+          "mediaKey": "<redacted>",
+          "fileEncSHA256": "<redacted>",
+          "directPath": "<redacted>",
+          "mediaKeyTimestamp": 1790952153,
+          "JPEGThumbnail": "<redacted>",
+          "contextInfo": {
+            "featureEligibilities": {
+              "cannotBeReactedTo": false,
+              "canBeReshared": false,
+              "canReceiveMultiReact": true
+            },
+            "statusSourceType": 0,
+            "posterStatusID": "<redacted>"
+          },
+          "firstScanSidecar": "+wOr6oLc8J0LMA==",
+          "firstScanLength": 10001,
+          "scansSidecar": "<redacted>",
+          "scanLengths": [
+            10001,
+            33880,
+            8430,
+            12546
+          ]
+        },
+        "messageContextInfo": {
+          "messageSecret": "<redacted>"
+        }
+      },
+      "IsEphemeral": false,
+      "IsViewOnce": false,
+      "IsViewOnceV2": false,
+      "IsViewOnceV2Extension": false,
+      "IsDocumentWithCaption": false,
+      "IsLottieSticker": false,
+      "IsBotInvoke": false,
+      "IsEdit": false,
+      "SourceWebMsg": null,
+      "UnavailableRequestID": "",
+      "RetryCount": 0,
+      "NewsletterMeta": null,
+      "RawMessage": {
+        "imageMessage": {
+          "URL": "https://mmg.whatsapp.net/<redacted>",
+          "mimetype": "image/jpeg",
+          "caption": "",
+          "fileSHA256": "<redacted>",
+          "fileLength": 64859,
+          "height": 965,
+          "width": 968,
+          "mediaKey": "<redacted>",
+          "fileEncSHA256": "<redacted>",
+          "directPath": "<redacted>",
+          "mediaKeyTimestamp": 1790952153,
+          "JPEGThumbnail": "<redacted>",
+          "contextInfo": {
+            "featureEligibilities": {
+              "cannotBeReactedTo": false,
+              "canBeReshared": false,
+              "canReceiveMultiReact": true
+            },
+            "statusSourceType": 0,
+            "posterStatusID": "<redacted>"
+          },
+          "firstScanSidecar": "+wOr6oLc8J0LMA==",
+          "firstScanLength": 10001,
+          "scansSidecar": "<redacted>",
+          "scanLengths": [
+            10001,
+            33880,
+            8430,
+            12546
+          ]
+        },
+        "messageContextInfo": {
+          "messageSecret": "<redacted>"
+        }
+      },
+      "Status": 3
+    }
+  },
+  "engine": "GOWS"
+}

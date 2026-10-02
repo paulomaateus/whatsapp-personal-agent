@@ -57,12 +57,13 @@
 |---|---|---|---|
 | `postgres` | `pgvector/pgvector:pg17` | Banco, vetores, busca textual e fila de jobs | `127.0.0.1:5432` |
 | `ollama` | `ollama/ollama` | Embeddings locais (`bge-m3`) na CPU | não exposta |
-| `waha` | `devlikeapro/waha` (versão Core, gratuita) | Client do WhatsApp: sessão, eventos, envio | `127.0.0.1:3000` (painel/API) |
+| `waha` | `devlikeapro/waha:gows` (versão Core, gratuita, engine GOWS) | Client do WhatsApp: sessão, eventos, envio, histórico | `127.0.0.1:3000` (painel/API) |
 | `api` | build local | FastAPI: imports, webhook do WAHA, APIs admin, busca, servidor MCP | `127.0.0.1:8000` |
 | `worker` | mesmo build do `api`, outro comando | Consome a fila de jobs | nenhuma |
 
 - **Todas as portas ficam presas em `127.0.0.1`.** Nada é exposto na rede.
 - O `api` roda `alembic upgrade head` ao iniciar.
+- O `api` garante na inicialização a configuração da sessão do WAHA (`PUT /api/sessions/{WAHA_SESSION}`: webhook, eventos, HMAC e `ignore.status`). O webhook é configurado **por sessão**, não por variável de ambiente do WAHA (ver [fase-0-resultados.md](fases/fase-0-resultados.md)).
 - Volumes: `pgdata`, `ollama_models`, `waha_sessions` e `media` (mídias extraídas dos imports).
 - O modelo de embeddings é baixado pelo próprio app na inicialização (`POST /api/pull` do Ollama) se ainda não existir.
 
@@ -114,8 +115,9 @@ WAHA_API_KEY=...
 WAHA_SESSION=default
 WAHA_WEBHOOK_HMAC_KEY=...
 
-# Identidade do usuário
-SELF_JID=                          # preenchido após a Fase 0/2 (ex.: 5511999999999@c.us)
+# Identidade do usuário (o self chat chega com os dois IDs; ambos também vêm em `me` de cada evento)
+SELF_JID=                          # telefone, ex.: 5511999999999@c.us
+SELF_LID=                          # LID, ex.: 123456789012345@lid
 SELF_DISPLAY_NAMES=Paulo           # nomes com que o usuário aparece nos exports, separados por vírgula
 
 # Imports
@@ -163,7 +165,7 @@ class ChatProvider(Protocol):
 - **O WAHA e qualquer biblioteca desse tipo são clientes não oficiais.** Isso viola os termos de uso do WhatsApp e existe risco de o número ser banido. Mitigações: nenhum envio automático, envios só após aprovação, volume baixo e nenhuma mensagem em massa.
 - O WAHA é tratado como um **adaptador isolado**. O resto do sistema conversa com ele por duas interfaces:
   - **Entrada:** `POST /api/v1/webhooks/waha`. O `webhook_parser` converte o payload do WAHA num objeto interno `IncomingEvent`, e o resto do código nunca vê o formato do WAHA.
-  - **Saída:** `WhatsAppGateway.send_text(chat_jid, text, reply_to=None) -> sent_message_id`.
+  - **Saída:** `WhatsAppGateway.send_text(chat_jid, text, reply_to=None, message_id=None) -> sent_message_id`. O `message_id` pode ser gerado antes do envio (`WhatsAppGateway.new_message_id()`), o que permite reconhecer o eco do webhook sem depender da ordem de chegada.
 - Assim, se um dia o WAHA for trocado por um serviço próprio com whatsmeow, só o adaptador muda.
 - **O webhook valida a assinatura HMAC** do WAHA e rejeita requisições sem assinatura válida.
 
@@ -306,7 +308,7 @@ As ferramentas são **funções Python comuns** numa camada de serviço. Elas s�
 | Containers | Docker Compose, 5 serviços | — |
 | Banco | PostgreSQL 17 + pgvector | Um banco só para dados, vetores, busca textual e fila |
 | Fila | Tabela no Postgres (`SKIP LOCKED`) | Evita Redis no MVP |
-| Client WhatsApp | WAHA Core, container separado | Pronto, com HTTP e webhooks, e isolado do resto |
+| Client WhatsApp | WAHA Core, engine GOWS, container separado | Pronto, com HTTP e webhooks, e isolado do resto; GOWS é leve (~430 MiB) e guarda o histórico (Fase 0) |
 | Fonte histórica | Export do WhatsApp **Android** (`.txt`/`.zip`) | O usuário usa Android |
 | Embeddings | `bge-m3` via Ollama, **local**, CPU | Privacidade (vê todo o histórico) e não há GPU |
 | LLM | Gemini free via endpoint OpenAI-compatible | Não há GPU; o provedor é trocável |

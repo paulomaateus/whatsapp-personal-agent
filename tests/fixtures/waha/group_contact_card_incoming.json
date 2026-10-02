@@ -1,0 +1,126 @@
+{
+  "id": "evt_01m3ygxdw2vr2v7xqnggmmp7vc",
+  "timestamp": 1790951995266,
+  "event": "message",
+  "session": "default",
+  "me": {
+    "id": "5511900000001@c.us",
+    "pushName": "Usuário",
+    "lid": "100000000000001@lid",
+    "jid": "5511900000001:22@s.whatsapp.net",
+    "reachoutTimelock": null,
+    "messageCapping": {
+      "cappingStatus": "NONE",
+      "totalQuota": -1,
+      "usedQuota": 0,
+      "cycleStart": 1790823600,
+      "cycleEnd": 1793501999,
+      "mvStatus": "NOT_ELIGIBLE",
+      "oteStatus": "NOT_ELIGIBLE"
+    }
+  },
+  "payload": {
+    "id": "false_5511900000005-100000000000006@g.us_2A4C3028F254E545C7E9_100000000000007@lid",
+    "timestamp": 1790951994,
+    "from": "5511900000005-100000000000006@g.us",
+    "fromMe": false,
+    "source": "app",
+    "to": "100000000000007@lid",
+    "participant": "100000000000007@lid",
+    "hasMedia": false,
+    "media": null,
+    "ack": 2,
+    "location": null,
+    "vCards": [
+      "BEGIN:VCARD\nVERSION:3.0\nN:;Contato Exemplo;;;\nFN:Contato Exemplo\nTEL;type=CELL;type=VOICE;waid=5511900009999:+55 11 90000-9999\nEND:VCARD"
+    ],
+    "ackName": "DEVICE",
+    "replyTo": null,
+    "_data": {
+      "Info": {
+        "Chat": "5511900000005-100000000000006@g.us",
+        "Sender": "100000000000007@lid",
+        "IsFromMe": false,
+        "IsGroup": true,
+        "AddressingMode": "lid",
+        "SenderAlt": "5511900000008@s.whatsapp.net",
+        "RecipientAlt": "",
+        "BroadcastListOwner": "",
+        "BroadcastRecipients": null,
+        "ID": "2A4C3028F254E545C7E9",
+        "ServerID": 0,
+        "Type": "media",
+        "PushName": "Contato 3",
+        "Timestamp": "2026-10-02T14:39:54Z",
+        "Category": "",
+        "Multicast": false,
+        "MediaType": "vcard",
+        "Edit": "",
+        "MsgBotInfo": {
+          "EditType": "",
+          "EditTargetID": "",
+          "EditSenderTimestampMS": "0001-01-01T00:00:00Z",
+          "ClientThreadID": ""
+        },
+        "MsgMetaInfo": {
+          "TargetID": "",
+          "TargetSender": "",
+          "TargetChat": "",
+          "DeprecatedLIDSession": null,
+          "ThreadMessageID": "",
+          "ThreadMessageSenderJID": ""
+        },
+        "IsNewsletterStatus": false,
+        "VerifiedName": {
+          "Certificate": {
+            "details": "<redacted>",
+            "signature": "<redacted>"
+          },
+          "Details": {
+            "serial": 11878362333757632,
+            "issuer": "smb:wa",
+            "verifiedName": "Contato 3"
+          },
+          "VerifiedLevel": "unknown",
+          "Version": 1,
+          "HostStorage": 0,
+          "ActualActors": 0,
+          "PrivacyModeTS": "0001-01-01T00:00:00Z"
+        },
+        "DeviceSentMeta": null
+      },
+      "Message": {
+        "contactMessage": {
+          "displayName": "<redacted>",
+          "vcard": "<redacted>"
+        },
+        "messageContextInfo": {
+          "messageSecret": "<redacted>"
+        }
+      },
+      "IsEphemeral": false,
+      "IsViewOnce": false,
+      "IsViewOnceV2": false,
+      "IsViewOnceV2Extension": false,
+      "IsDocumentWithCaption": false,
+      "IsLottieSticker": false,
+      "IsBotInvoke": false,
+      "IsEdit": false,
+      "SourceWebMsg": null,
+      "UnavailableRequestID": "",
+      "RetryCount": 0,
+      "NewsletterMeta": null,
+      "RawMessage": {
+        "contactMessage": {
+          "displayName": "<redacted>",
+          "vcard": "<redacted>"
+        },
+        "messageContextInfo": {
+          "messageSecret": "<redacted>"
+        }
+      },
+      "Status": 3
+    }
+  },
+  "engine": "GOWS"
+}

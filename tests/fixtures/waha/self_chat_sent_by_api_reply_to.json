@@ -1,0 +1,131 @@
+{
+  "id": "evt_01m3ygvdas2vyscer7tgx38k0w",
+  "timestamp": 1790951929177,
+  "event": "message.any",
+  "session": "default",
+  "me": {
+    "id": "5511900000001@c.us",
+    "pushName": "Usuário",
+    "lid": "100000000000001@lid",
+    "jid": "5511900000001:22@s.whatsapp.net",
+    "reachoutTimelock": null,
+    "messageCapping": {
+      "cappingStatus": "NONE",
+      "totalQuota": -1,
+      "usedQuota": 0,
+      "cycleStart": 1790823600,
+      "cycleEnd": 1793501999,
+      "mvStatus": "NOT_ELIGIBLE",
+      "oteStatus": "NOT_ELIGIBLE"
+    }
+  },
+  "payload": {
+    "id": "true_5511900000001@c.us_3EB029B56A7F1535E6EE0C",
+    "timestamp": 1790951929,
+    "from": "5511900000001@c.us",
+    "fromMe": true,
+    "source": "api",
+    "body": "[spike fase 0] teste #2: id pré-gerado + reply_to",
+    "to": null,
+    "participant": null,
+    "hasMedia": false,
+    "media": null,
+    "ack": 1,
+    "location": null,
+    "vCards": null,
+    "ackName": "SERVER",
+    "replyTo": {
+      "id": "3EB0E998CD39ACEAD84B09",
+      "participant": "5511900000001@c.us",
+      "body": "[spike fase 0] teste sendText #1",
+      "hasMedia": false,
+      "media": null,
+      "_data": {
+        "extendedTextMessage": {
+          "text": "[spike fase 0] teste sendText #1"
+        }
+      }
+    },
+    "_data": {
+      "Info": {
+        "Chat": "5511900000001@s.whatsapp.net",
+        "Sender": "5511900000001:22@s.whatsapp.net",
+        "IsFromMe": true,
+        "IsGroup": false,
+        "AddressingMode": "",
+        "SenderAlt": "",
+        "RecipientAlt": "",
+        "BroadcastListOwner": "",
+        "BroadcastRecipients": null,
+        "ID": "3EB029B56A7F1535E6EE0C",
+        "ServerID": 0,
+        "Type": "",
+        "PushName": "",
+        "Timestamp": "2026-10-02T14:38:49Z",
+        "Category": "",
+        "Multicast": false,
+        "MediaType": "",
+        "Edit": "",
+        "MsgBotInfo": {
+          "EditType": "",
+          "EditTargetID": "",
+          "EditSenderTimestampMS": "0001-01-01T00:00:00Z",
+          "ClientThreadID": ""
+        },
+        "MsgMetaInfo": {
+          "TargetID": "",
+          "TargetSender": "",
+          "TargetChat": "",
+          "DeprecatedLIDSession": null,
+          "ThreadMessageID": "",
+          "ThreadMessageSenderJID": ""
+        },
+        "IsNewsletterStatus": false,
+        "VerifiedName": null,
+        "DeviceSentMeta": null
+      },
+      "Message": {
+        "extendedTextMessage": {
+          "text": "[spike fase 0] teste #2: id pré-gerado + reply_to",
+          "contextInfo": {
+            "stanzaID": "3EB0E998CD39ACEAD84B09",
+            "participant": "5511900000001@s.whatsapp.net",
+            "quotedMessage": {
+              "extendedTextMessage": {
+                "text": "[spike fase 0] teste sendText #1"
+              }
+            }
+          }
+        }
+      },
+      "IsEphemeral": false,
+      "IsViewOnce": false,
+      "IsViewOnceV2": false,
+      "IsViewOnceV2Extension": false,
+      "IsDocumentWithCaption": false,
+      "IsLottieSticker": false,
+      "IsBotInvoke": false,
+      "IsEdit": false,
+      "SourceWebMsg": null,
+      "UnavailableRequestID": "",
+      "RetryCount": 0,
+      "NewsletterMeta": null,
+      "RawMessage": {
+        "extendedTextMessage": {
+          "text": "[spike fase 0] teste #2: id pré-gerado + reply_to",
+          "contextInfo": {
+            "stanzaID": "3EB0E998CD39ACEAD84B09",
+            "participant": "5511900000001@s.whatsapp.net",
+            "quotedMessage": {
+              "extendedTextMessage": {
+                "text": "[spike fase 0] teste sendText #1"
+              }
+            }
+          }
+        }
+      },
+      "Status": 2
+    }
+  },
+  "engine": "GOWS"
+}

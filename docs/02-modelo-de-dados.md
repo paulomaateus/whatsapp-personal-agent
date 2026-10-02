@@ -248,7 +248,7 @@ Toda mensagem enviada **pelo sistema**. Serve para o webhook reconhecer e ignora
 | Coluna | Tipo | Notas |
 |---|---|---|
 | id | bigint PK | |
-| whatsapp_message_id | text NULL UNIQUE | Retornado pelo WAHA; `NULL` enquanto o envio não confirma |
+| whatsapp_message_id | text NULL UNIQUE | ID curto gerado **antes** do envio (`new-message-id` do WAHA) e passado ao `sendText`; permite reconhecer o eco do webhook em qualquer ordem |
 | chat_jid | text | |
 | text | text | |
 | purpose | text | `AGENT_ANSWER` \| `SUGGESTION` \| `NOTICE` \| `APPROVED_REPLY` |

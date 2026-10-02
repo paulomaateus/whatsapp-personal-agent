@@ -1,0 +1,187 @@
+{
+  "id": "evt_01m3yh07hy2v0f6vq9phb6hyxh",
+  "timestamp": 1790952087102,
+  "event": "message.revoked",
+  "session": "default",
+  "me": {
+    "id": "5511900000001@c.us",
+    "pushName": "Usuário",
+    "lid": "100000000000001@lid",
+    "jid": "5511900000001:22@s.whatsapp.net",
+    "reachoutTimelock": null,
+    "messageCapping": {
+      "cappingStatus": "NONE",
+      "totalQuota": -1,
+      "usedQuota": 0,
+      "cycleStart": 1790823600,
+      "cycleEnd": 1793501999,
+      "mvStatus": "NOT_ELIGIBLE",
+      "oteStatus": "NOT_ELIGIBLE"
+    }
+  },
+  "payload": {
+    "after": {
+      "id": "true_5511900000001@c.us_3EB06BF060108217C208FA",
+      "timestamp": 1790952087,
+      "from": "5511900000001@c.us",
+      "fromMe": true,
+      "source": "api",
+      "to": null,
+      "participant": null,
+      "hasMedia": false,
+      "media": null,
+      "ack": 1,
+      "location": null,
+      "vCards": null,
+      "ackName": "SERVER",
+      "replyTo": null,
+      "_data": {
+        "Info": {
+          "Chat": "5511900000001@s.whatsapp.net",
+          "Sender": "5511900000001:22@s.whatsapp.net",
+          "IsFromMe": true,
+          "IsGroup": false,
+          "AddressingMode": "",
+          "SenderAlt": "",
+          "RecipientAlt": "",
+          "BroadcastListOwner": "",
+          "BroadcastRecipients": null,
+          "ID": "3EB06BF060108217C208FA",
+          "ServerID": 0,
+          "Type": "",
+          "PushName": "",
+          "Timestamp": "2026-10-02T14:41:27Z",
+          "Category": "",
+          "Multicast": false,
+          "MediaType": "",
+          "Edit": "",
+          "MsgBotInfo": {
+            "EditType": "",
+            "EditTargetID": "",
+            "EditSenderTimestampMS": "0001-01-01T00:00:00Z",
+            "ClientThreadID": ""
+          },
+          "MsgMetaInfo": {
+            "TargetID": "",
+            "TargetSender": "",
+            "TargetChat": "",
+            "DeprecatedLIDSession": null,
+            "ThreadMessageID": "",
+            "ThreadMessageSenderJID": ""
+          },
+          "IsNewsletterStatus": false,
+          "VerifiedName": null,
+          "DeviceSentMeta": null
+        },
+        "Message": {
+          "protocolMessage": {
+            "key": {
+              "remoteJID": "5511900000001@s.whatsapp.net",
+              "fromMe": true,
+              "ID": "3EB0E998CD39ACEAD84B09"
+            },
+            "type": 0
+          }
+        },
+        "IsEphemeral": false,
+        "IsViewOnce": false,
+        "IsViewOnceV2": false,
+        "IsViewOnceV2Extension": false,
+        "IsDocumentWithCaption": false,
+        "IsLottieSticker": false,
+        "IsBotInvoke": false,
+        "IsEdit": false,
+        "SourceWebMsg": null,
+        "UnavailableRequestID": "",
+        "RetryCount": 0,
+        "NewsletterMeta": null,
+        "RawMessage": {
+          "protocolMessage": {
+            "key": {
+              "remoteJID": "5511900000001@s.whatsapp.net",
+              "fromMe": true,
+              "ID": "3EB0E998CD39ACEAD84B09"
+            },
+            "type": 0
+          }
+        },
+        "Status": 2
+      }
+    },
+    "before": null,
+    "revokedMessageId": "3EB0E998CD39ACEAD84B09",
+    "_data": {
+      "Info": {
+        "Chat": "5511900000001@s.whatsapp.net",
+        "Sender": "5511900000001:22@s.whatsapp.net",
+        "IsFromMe": true,
+        "IsGroup": false,
+        "AddressingMode": "",
+        "SenderAlt": "",
+        "RecipientAlt": "",
+        "BroadcastListOwner": "",
+        "BroadcastRecipients": null,
+        "ID": "3EB06BF060108217C208FA",
+        "ServerID": 0,
+        "Type": "",
+        "PushName": "",
+        "Timestamp": "2026-10-02T14:41:27Z",
+        "Category": "",
+        "Multicast": false,
+        "MediaType": "",
+        "Edit": "",
+        "MsgBotInfo": {
+          "EditType": "",
+          "EditTargetID": "",
+          "EditSenderTimestampMS": "0001-01-01T00:00:00Z",
+          "ClientThreadID": ""
+        },
+        "MsgMetaInfo": {
+          "TargetID": "",
+          "TargetSender": "",
+          "TargetChat": "",
+          "DeprecatedLIDSession": null,
+          "ThreadMessageID": "",
+          "ThreadMessageSenderJID": ""
+        },
+        "IsNewsletterStatus": false,
+        "VerifiedName": null,
+        "DeviceSentMeta": null
+      },
+      "Message": {
+        "protocolMessage": {
+          "key": {
+            "remoteJID": "5511900000001@s.whatsapp.net",
+            "fromMe": true,
+            "ID": "3EB0E998CD39ACEAD84B09"
+          },
+          "type": 0
+        }
+      },
+      "IsEphemeral": false,
+      "IsViewOnce": false,
+      "IsViewOnceV2": false,
+      "IsViewOnceV2Extension": false,
+      "IsDocumentWithCaption": false,
+      "IsLottieSticker": false,
+      "IsBotInvoke": false,
+      "IsEdit": false,
+      "SourceWebMsg": null,
+      "UnavailableRequestID": "",
+      "RetryCount": 0,
+      "NewsletterMeta": null,
+      "RawMessage": {
+        "protocolMessage": {
+          "key": {
+            "remoteJID": "5511900000001@s.whatsapp.net",
+            "fromMe": true,
+            "ID": "3EB0E998CD39ACEAD84B09"
+          },
+          "type": 0
+        }
+      },
+      "Status": 2
+    }
+  },
+  "engine": "GOWS"
+}

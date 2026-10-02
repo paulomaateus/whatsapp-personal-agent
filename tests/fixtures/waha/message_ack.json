@@ -1,0 +1,49 @@
+{
+  "id": "evt_01m3ygwby8tx6npax3ngqg1jph",
+  "timestamp": 1790951960520,
+  "event": "message.ack",
+  "session": "default",
+  "me": {
+    "id": "5511900000001@c.us",
+    "pushName": "Usuário",
+    "lid": "100000000000001@lid",
+    "jid": "5511900000001:22@s.whatsapp.net",
+    "reachoutTimelock": null,
+    "messageCapping": {
+      "cappingStatus": "NONE",
+      "totalQuota": -1,
+      "usedQuota": 0,
+      "cycleStart": 1790823600,
+      "cycleEnd": 1793501999,
+      "mvStatus": "NOT_ELIGIBLE",
+      "oteStatus": "NOT_ELIGIBLE"
+    }
+  },
+  "payload": {
+    "id": "true_100000000000003@lid_AC451DAEED14DC531F2A30727E306D7D",
+    "from": "100000000000003@lid",
+    "to": null,
+    "participant": null,
+    "fromMe": true,
+    "ack": 2,
+    "ackName": "DEVICE",
+    "_data": {
+      "Chat": "100000000000003@lid",
+      "Sender": "100000000000003@lid",
+      "IsFromMe": false,
+      "IsGroup": false,
+      "AddressingMode": "",
+      "SenderAlt": "",
+      "RecipientAlt": "",
+      "BroadcastListOwner": "",
+      "BroadcastRecipients": null,
+      "MessageIDs": [
+        "AC451DAEED14DC531F2A30727E306D7D"
+      ],
+      "Timestamp": "2026-10-02T14:39:20Z",
+      "Type": "",
+      "MessageSender": ""
+    }
+  },
+  "engine": "GOWS"
+}

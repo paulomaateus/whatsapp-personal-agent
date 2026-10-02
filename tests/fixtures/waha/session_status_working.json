@@ -1,0 +1,52 @@
+{
+  "id": "evt_01m3ygr0bqk1p5mc8yvc48jz5k",
+  "timestamp": 1790951817591,
+  "event": "session.status",
+  "session": "default",
+  "me": {
+    "id": "5511900000001@c.us",
+    "pushName": "Usuário",
+    "lid": "100000000000001@lid",
+    "jid": "5511900000001:22@s.whatsapp.net",
+    "reachoutTimelock": null,
+    "messageCapping": {
+      "cappingStatus": "NONE",
+      "totalQuota": -1,
+      "usedQuota": 0,
+      "cycleStart": 1790823600,
+      "cycleEnd": 1793501999,
+      "mvStatus": "NOT_ELIGIBLE",
+      "oteStatus": "NOT_ELIGIBLE"
+    }
+  },
+  "payload": {
+    "name": "Contato 2",
+    "status": "WORKING",
+    "statuses": [
+      {
+        "status": "STARTING",
+        "timestamp": 1790951788500
+      },
+      {
+        "status": "SCAN_QR_CODE",
+        "timestamp": 1790951789343
+      },
+      {
+        "status": "WORKING",
+        "timestamp": 1790951817591
+      }
+    ],
+    "data": {
+      "messageCapping": {
+        "cappingStatus": "NONE",
+        "totalQuota": -1,
+        "usedQuota": 0,
+        "cycleStart": 1790823600,
+        "cycleEnd": 1793501999,
+        "mvStatus": "NOT_ELIGIBLE",
+        "oteStatus": "NOT_ELIGIBLE"
+      }
+    }
+  },
+  "engine": "GOWS"
+}
